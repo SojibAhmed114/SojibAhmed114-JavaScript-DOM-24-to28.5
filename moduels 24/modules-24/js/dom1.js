@@ -102,4 +102,22 @@ console.log(qSelector);
 //   const texts = document.getElementById("allList").style.textAlign = "center"
 //  </script>
 
-note 9 : 
+// note 9 : getAttribute এটা দিয়ে id আর class লিস্ট পাওয়া যায়।
+// <h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
+// <script>
+// const titles = document.getElementById("gets")
+//     titles.getAttribute("id") //output: gets
+
+// const titles = document.getElementById("gets")
+// titles.getAttribute("class") //output: header bg-red p-10
+// </script>
+
+// note 10: clasList এটা array এর মতো class list দেয়।
+// <h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
+//  <script>
+//  const clases = document.getElementById("gets");
+//  clases.classList // যতগুলো class আছে সব গুলোকে দেখাবে
+
+//  clases.classList.add("classAdd") // class এড করা যায়।
+//  clases.classList.remove("header") // class remove করা যাবে।
+// </script>
