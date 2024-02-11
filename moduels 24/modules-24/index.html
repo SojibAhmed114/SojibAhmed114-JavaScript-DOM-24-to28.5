@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ber hobar obostha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <h1>web-programming-hero.com</h1></header>
+    <main>
+        <h2>learn programming for  </h2>
+        <h2>learn programming for web </h2>
+        <h2>learn programming for web application</h2>
+        <ul>
+            <li>sojib</li>
+            <li>safi</li>
+            <li>sakil</li>
+            <li>sakil</li>
+            <li>sakil</li>
+        </ul>
+    </main>
+
+
+    <!-- <script src="js/dom1.js"></script> -->
+    <script>
+        const  licollection = document.getElementsByTagName("li");
+        for (const  li of licollection){
+            console.log(li); 
+        }
+
+       const headingBoy = document.getElementsByTagName("h2")
+       for (const abc of headingBoy){
+        console.log(abc.innerText); 
+       }
+    </script>
+</body>
+</html>

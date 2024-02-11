@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletor</title>
+</head>
+<body>
+    <main>
+       <section class="first">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+        </ul>
+       </section>
+
+       <section class="list-container">
+        <h1 id="allList">Lorem ipsum dolor sit amet.</h1>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+        </ul>
+       </section>
+
+       <script>
+        const find  = document.querySelectorAll ("#allList");
+        console.log(find); 
+        //of
+        const find2 = document.querySelectorAll(".list-container li");
+        for (const data of find2){
+            console.log(data.innerText); 
+        }
+
+        // querySelector
+        const qSelector = document.querySelector(".first li");
+        console.log(qSelector); 
+
+       </script>
+       
+    </main>
+</body>
+</html>
