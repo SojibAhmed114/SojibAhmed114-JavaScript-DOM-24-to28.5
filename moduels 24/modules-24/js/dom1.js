@@ -124,7 +124,19 @@ console.log(qSelector);
 
 
 // note 11:  setAttribute : setAttribute এ () এর মধ্যে দুটি জিনিস লিখতে হয়। ১.name । ২. কি করতে চাই তার Value.
+{/* <h2 id="kire" class="painful">Programming is so painful</h2> */}
 {/* <script>
   const sets = document.getElementById("kire");
   sets.setAttribute("title", "set korlam")
 </script> */}
+
+
+// note 12: innerHTML হলো যদি container কে innerHTML করা হয় তাহলে পুরো container মধ্যে  যা থাকবে সাব  শো করেবে। এমকি comments সহ
+
+// const innerHtml =document.getElementsByClassName("list-container")[0].innerHTML
+// console.log(innerHtml); //output: sob gula e dekhebe
+
+// const innerHTml =document.getElementsByClassName("list-container")[0].innerHTML = "<h2>Programming is so </h2>"
+// console.log(innerHTml); //output: ager sob delete hoye new h2 add hove
+// </script>
+
