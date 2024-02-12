@@ -169,4 +169,44 @@ console.log(qSelector);
 
 // js
 // const firstSection = document.getElementById("first"); // এখানে first হলো html এর idনাম
-// // firstSection.classList.add("about"); // about হলো css className যা html ফাইলে নেই। classList.add এর মাধ্যমে এড করা হয়েছে। 
+// // firstSection.classList.add("about"); // about হলো css className যা html ফাইলে নেই। classList.add এর মাধ্যমে এড করা হয়েছে।
+
+
+
+
+
+// title: NodeList, Htmlcollection, ParentNode, Childnodes, CreateElement
+// note 14: childNodes
+// childNodes মানে হলো একটি section বা file এর মধ্যে যা কিছু আছে সব শো করবে। (যেমন: all elemet, all node , commets , space)
+// const palceContainer = document.getElementById("places-container")
+// console.log(palceContainer.childNodes);
+// or
+// console.log(palceContainer.childNodes[0]);  //(index দিয়ে দেখা যাবে।).
+
+// note 15: firstChild
+// firstChild দিয়ে প্রথম টাকে পাওয়া যাবে।
+
+// note: 16: lastChild
+// lastChild দিয়ে শেষ টাকে পাওয়া যাবে।
+
+
+// note 17 : NextSibling
+// NextSibling = মানে হলো elemet বা tag এর পরবর্তী  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
+// note 18 : PreviousSibling
+// PreviousSibling = মানে হলো elemet বা tag এর আগে  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
+
+
+// note 19: nextElementSibling
+// nextElementSibling = মানে হলো পরবর্তী elemet বা tag কে আছে তা দেখা বা পাওয়া।
+
+// note 20: createElement
+// createElement মানে হলো  elemet বা tag তৈরি করা।
+// const creates = document.createElement(li); output: <li></li>
+
+// note 21: createAttribute
+// createAttribute মানে হলো elemet এর মধ্যে  Attribute তৈরি করা। যেমন: <video src=""></video>এই ট্যাগ এর মধ্যে Attribute হলো src=""
+// const aCreates = document.createAttribute("");
+
+// note : append
+// append অনেকটা push এর মতো। 
+// কোনো Element create করার পর পুস করতে append ব্যবহার করা হয়।
