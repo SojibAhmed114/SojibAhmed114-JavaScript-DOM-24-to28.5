@@ -112,12 +112,19 @@ console.log(qSelector);
 // titles.getAttribute("class") //output: header bg-red p-10
 // </script>
 
-// note 10: clasList এটা array এর মতো class list দেয়।
+// note 10: classList এটা array এর মতো class list দেয়।
 // <h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
 //  <script>
-//  const clases = document.getElementById("gets");
-//  clases.classList // যতগুলো class আছে সব গুলোকে দেখাবে
+//  const variableName = document.getElementById("gets");
+//  variableName.classList // যতগুলো class আছে সব গুলোকে দেখাবে
 
-//  clases.classList.add("classAdd") // class এড করা যায়।
-//  clases.classList.remove("header") // class remove করা যাবে।
+//  variableName.classList.add("classAdd") // class এড করা যায়।
+//  variableName.classList.remove("header") // class remove করা যাবে।
 // </script>
+
+
+// note 11:  setAttribute : setAttribute এ () এর মধ্যে দুটি জিনিস লিখতে হয়। ১.name । ২. কি করতে চাই তার Value.
+{/* <script>
+  const sets = document.getElementById("kire");
+  sets.setAttribute("title", "set korlam")
+</script> */}
