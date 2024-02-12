@@ -168,7 +168,5 @@ console.log(qSelector);
 // css class
 
 // js
-// const firstSection = document.getElementById("first");
-// // firstSection.classList.add("about");
-// or
-// firstSection.class = "about";
+// const firstSection = document.getElementById("first"); // এখানে first হলো html এর idনাম
+// // firstSection.classList.add("about"); // about হলো css className যা html ফাইলে নেই। classList.add এর মাধ্যমে এড করা হয়েছে। 
