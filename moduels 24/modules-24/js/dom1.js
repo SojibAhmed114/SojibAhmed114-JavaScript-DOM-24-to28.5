@@ -10,7 +10,7 @@
 // getElementById, getElementsByClassName দিয়ে কাজ করলে HTMLCollection পাওয়া যায়।
 
 // nodelist মানে হলো static
-// for Each  ব্যবহার করা যাবে। 
+// for Each  ব্যবহার করা যাবে। for of use kora jay. 
 // querySelectorAll দিয়ে কাজ করলে nodelist পাওয়া যায়।
 
 
@@ -49,7 +49,7 @@
 // className দিয়ে খোজার সময় Element এর শেষে s থাকবে। এর মানে হলো এটা array এর মতো দিবে পুুরোপুরি array না। পরে চাইলে  for of loop চালানো সম্ভব। do not use . (dot)
 
 {/* <script>
-const placeName =   document.getElementsByClassName("place-name");
+const placeName = document.getElementsByClassName("place-name");
     for (const place of placeName){
         console.log(place); 
   }
@@ -140,3 +140,35 @@ console.log(qSelector);
 // console.log(innerHTml); //output: ager sob delete hoye new h2 add hove
 // </script>
 
+
+
+//................................
+// note 13: Dom Properties, Add And Remove Css style Using JS
+//all section design in javaScript
+// const sectionDesign = document.querySelectorAll("section");
+// for (const design of sectionDesign) {
+//     design.style.backgroundColor = "lightgray";
+//     design.style.border = "2px solid red";
+//     design.style.marginBottom = "5px";
+//     design.style.paddingLeft = "20px"
+//     design.style.borderRadius = "0 10px 0 10px"
+// }
+
+//one section design
+//use id
+// const middleSection = document.getElementById("middle-section");
+// middleSection.style.backgroundColor = "red";
+// middleSection.style.borderRadius = "20px";
+
+// // use  - class
+// const oneSectionDesign = document.getElementsByClassName("last-section");
+// oneSectionDesign.style.backgroundColor = "gray";
+
+//use css class
+// css class
+
+// js
+// const firstSection = document.getElementById("first");
+// // firstSection.classList.add("about");
+// or
+// firstSection.class = "about";
