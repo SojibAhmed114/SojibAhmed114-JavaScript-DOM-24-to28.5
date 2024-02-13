@@ -2,7 +2,7 @@
 // system one : //ata use na korai valo ba korbo na
 {/* <button onclick="document.body.style.backgroundColor ='red'">make Bg red</button> */}
 
-// system two: //ata beshi use krobo
+// system two: //2 star important
 // <button onclick="makeYellow()">make yellow</button>
 // // js
 // function makeYellow() {
@@ -18,9 +18,8 @@ function makess() {
     document.body.style.backgroundColor = "blue"
 } */}
 
-// system four
+// system four ; important
 {/* <button class="make-dark" id="kihoilo">make dark </button>
-// js
 const ki = document.getElementById("kihoilo");
 ki.onclick = function darks() {
     document.body.style.backgroundColor = "gray";
@@ -31,7 +30,7 @@ ki.onclick = function darks() {
 // titel 2: oneclick handler AddEventListener (important)
 // AddEventListener মূলত একাধিক কাজ করে। যেমন: onclick , MouseEvent etc.AddEventListener লেখার সময় ("কিকাজ সেইটা", functionName or CreateFunction)এর মধ্যে দুই টা value দেয়া লাগে।
 
-// main system :
+// main system : very very important
 {/* <button id="make-Salmon">make orange</button>
 // js
 document.getElementById("make-Salmon").addEventListener("click", function () {
@@ -58,3 +57,17 @@ makeGreen.addEventListener("click", function Green() {
 }) */}
 
 //.........................................
+// note : text change with input and button
+//     <p id="text-item">village name</p>
+//     <input id="inputFild" type="text">
+//     <button id="btn-add">Add</button>
+//     {/* js  */}
+//     document.getElementById("btn-add").addEventListener("click", function () {
+//     const textInput = document.getElementById("inputFild");
+//     const inputText = textInput.value;
+
+//     const para = document.getElementById("text-item");
+//     para.innerText = inputText;
+//     textInput.value = "";
+// })
+//...............................................
