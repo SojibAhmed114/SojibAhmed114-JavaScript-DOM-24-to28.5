@@ -71,3 +71,6 @@ makeGreen.addEventListener("click", function Green() {
 //     textInput.value = "";
 // })
 //...............................................
+
+// note: variableName.inneerText: p tag , h1 tag ইত্যাদি থেকে লেখা পাইতে হলে inneerText ব্যবহার করতে হবে।
+// variableName.value: input , textarea থেকে লেখা পাইতে হলে variableName.value ব্যবহার করতে হবে। 
