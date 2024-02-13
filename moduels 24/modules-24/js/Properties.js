@@ -9,14 +9,14 @@ for (const design of sectionDesign) {
 }
 
 
-//middle section design - use: id
-const middleSection = document.getElementById("middle-section");
-middleSection.style.backgroundColor = "red";
-middleSection.style.borderRadius = "20px";
+// //middle section design - use: id
+// const middleSection = document.getElementById("middle-section");
+// middleSection.style.backgroundColor = "red";
+// middleSection.style.borderRadius = "20px";
 
-//  only one section design- use  - class
-const oneSectionDesign = document.getElementsByClassName("last-section");
-oneSectionDesign.style.backgroundColor = "gray";
+// //  only one section design- use  - class
+// const oneSectionDesign = document.getElementsByClassName("last-section");
+// oneSectionDesign.style.backgroundColor = "gray";
 
 
 
