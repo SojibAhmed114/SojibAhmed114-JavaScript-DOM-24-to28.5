@@ -9,7 +9,11 @@ const palceContainer = document.getElementById("places-container")
 
 
 
-const liCreate = document.createElement("li");
-liCreate.innerText = "new akta li add korlam r text o add korelam";
-const htmlclass = document.querySelector(".li-append");
-htmlclass.appendChild(liCreate)
+// const liCreate = document.createElement("li");
+// liCreate.innerText = "new akta li add korlam r text o add korelam";
+// const htmlclass = document.querySelector(".li-append");
+// htmlclass.appendChild(liCreate)
+
+//কোনো কিছু  ডিলেট করতে চাইলে index দিয়ে করা যায়।
+const delete = document.getElementsByClassName("two-container")[0];
+delete.remove(); 

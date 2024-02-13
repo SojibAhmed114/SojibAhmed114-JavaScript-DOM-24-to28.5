@@ -94,124 +94,125 @@ console.log(qSelector);
 // css এর মতো javaScript দিয়ে style করা যায়।
 
 
-// note 8 : change style in JavaScript
-//   < h1 id = "allList" > Lorem ipsum dolor sit amet.</ >
-//   <script>
-//   const color = document.getElementById("allList").style.color = "red"
-//   const bgcolor = document.getElementById("allList").style.backgroundColor = "yellow"
-//   const texts = document.getElementById("allList").style.textAlign = "center"
-//  </script>
+ note 8 : change style in JavaScript
+  < h1 id = "allList" > Lorem ipsum dolor sit amet.</ >
+  <script>
+  const color = document.getElementById("allList").style.color = "red"
+  const bgcolor = document.getElementById("allList").style.backgroundColor = "yellow"
+  const texts = document.getElementById("allList").style.textAlign = "center"
+ </script>
 
-// note 9 : getAttribute এটা দিয়ে id আর class লিস্ট পাওয়া যায়।
-// <h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
-// <script>
-// const titles = document.getElementById("gets")
-//     titles.getAttribute("id") //output: gets
+note 9 : getAttribute এটা দিয়ে id আর class লিস্ট পাওয়া যায়।
+<h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
+<script>
+const titles = document.getElementById("gets")
+    titles.getAttribute("id") //output: gets
 
-// const titles = document.getElementById("gets")
-// titles.getAttribute("class") //output: header bg-red p-10
-// </script>
+const titles = document.getElementById("gets")
+titles.getAttribute("class") //output: header bg-red p-10
+</script>
 
-// note 10: classList এটা array এর মতো class list দেয়।
-// <h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
-//  <script>
-//  const variableName = document.getElementById("gets");
-//  variableName.classList // যতগুলো class আছে সব গুলোকে দেখাবে
+note 10: classList এটা array এর মতো class list দেয়।
+<h1 id="gets" class=" header bg-red p-10">Lorem ipsum dolor sit amet.</h1>
+ <script>
+ const variableName = document.getElementById("gets");
+ variableName.classList // যতগুলো class আছে সব গুলোকে দেখাবে
 
-//  variableName.classList.add("classAdd") // class এড করা যায়।
-//  variableName.classList.remove("header") // class remove করা যাবে।
-// </script>
+ variableName.classList.add("classAdd") // class এড করা যায়।
+ variableName.classList.remove("header") // class remove করা যাবে।
+</script>
 
 
-// note 11:  setAttribute : setAttribute এ () এর মধ্যে দুটি জিনিস লিখতে হয়। ১.name । ২. কি করতে চাই তার Value.
-{/* <h2 id="kire" class="painful">Programming is so painful</h2> */}
-{/* <script>
+note 11:  setAttribute : setAttribute এ () এর মধ্যে দুটি জিনিস লিখতে হয়। ১.name । ২. কি করতে চাই তার Value.
+ <h2 id="kire" class="painful">Programming is so painful</h2> */}
+<script>
   const sets = document.getElementById("kire");
   sets.setAttribute("title", "set korlam")
-</script> */}
+</script>
 
 
-// note 12: innerHTML হলো যদি container কে innerHTML করা হয় তাহলে পুরো container মধ্যে  যা থাকবে সাব  শো করেবে। এমকি comments সহ
+note 12: innerHTML হলো যদি container কে innerHTML করা হয় তাহলে পুরো container মধ্যে  যা থাকবে সাব  শো করেবে। এমকি comments সহ
 
-// const innerHtml =document.getElementsByClassName("list-container")[0].innerHTML
-// console.log(innerHtml); //output: sob gula e dekhebe
+const innerHtml =document.getElementsByClassName("list-container")[0].innerHTML
+console.log(innerHtml); //output: sob gula e dekhebe
 
-// const innerHTml =document.getElementsByClassName("list-container")[0].innerHTML = "<h2>Programming is so </h2>"
-// console.log(innerHTml); //output: ager sob delete hoye new h2 add hove
-// </script>
+const innerHTml =document.getElementsByClassName("list-container")[0].innerHTML = "<h2>Programming is so </h2>"
+console.log(innerHTml); //output: ager sob delete hoye new h2 add hove
+</script>
 
 
 
 //................................
-// note 13: Dom Properties, Add And Remove Css style Using JS
-//all section design in javaScript
-// const sectionDesign = document.querySelectorAll("section");
-// for (const design of sectionDesign) {
-//     design.style.backgroundColor = "lightgray";
-//     design.style.border = "2px solid red";
-//     design.style.marginBottom = "5px";
-//     design.style.paddingLeft = "20px"
-//     design.style.borderRadius = "0 10px 0 10px"
-// }
+note 13: Dom Properties, Add And Remove Css style Using JS
+all section design in javaScript
+const sectionDesign = document.querySelectorAll("section");
+for (const design of sectionDesign) {
+    design.style.backgroundColor = "lightgray";
+    design.style.border = "2px solid red";
+    design.style.marginBottom = "5px";
+    design.style.paddingLeft = "20px"
+    design.style.borderRadius = "0 10px 0 10px"
+}
 
-//one section design
-//use id
-// const middleSection = document.getElementById("middle-section");
-// middleSection.style.backgroundColor = "red";
-// middleSection.style.borderRadius = "20px";
+one section design
+use id
+const middleSection = document.getElementById("middle-section");
+middleSection.style.backgroundColor = "red";
+middleSection.style.borderRadius = "20px";
 
-// // use  - class
-// const oneSectionDesign = document.getElementsByClassName("last-section");
-// oneSectionDesign.style.backgroundColor = "gray";
+// use  - class
+const oneSectionDesign = document.getElementsByClassName("last-section");
+oneSectionDesign.style.backgroundColor = "gray";
 
-//use css class
-// css class
+use css class
+css class
 
-// js
-// const firstSection = document.getElementById("first"); // এখানে first হলো html এর idনাম
-// // firstSection.classList.add("about"); // about হলো css className যা html ফাইলে নেই। classList.add এর মাধ্যমে এড করা হয়েছে।
+js
+const firstSection = document.getElementById("first"); // এখানে first হলো html এর idনাম
+// firstSection.classList.add("about"); // about হলো css className যা html ফাইলে নেই। classList.add এর মাধ্যমে এড করা হয়েছে।
 
 
 
 
 
 // title: NodeList, Htmlcollection, ParentNode, Childnodes, CreateElement
+
 // note 14: childNodes
-// childNodes মানে হলো একটি section বা file এর মধ্যে যা কিছু আছে সব শো করবে। (যেমন: all elemet, all node , commets , space)
-// const palceContainer = document.getElementById("places-container")
-// console.log(palceContainer.childNodes);
-// or
-// console.log(palceContainer.childNodes[0]);  //(index দিয়ে দেখা যাবে।).
+childNodes মানে হলো একটি section বা file এর মধ্যে যা কিছু আছে সব শো করবে। (যেমন: all elemet, all node , commets , space)
+const palceContainer = document.getElementById("places-container")
+console.log(palceContainer.childNodes);
+or
+console.log(palceContainer.childNodes[0]);  //(index দিয়ে দেখা যাবে।).
 
-// note 15: firstChild
-// firstChild দিয়ে প্রথম টাকে পাওয়া যাবে।
+note 15: firstChild
+firstChild দিয়ে প্রথম টাকে পাওয়া যাবে।
 
-// note: 16: lastChild
-// lastChild দিয়ে শেষ টাকে পাওয়া যাবে।
-
-
-// note 17 : NextSibling
-// NextSibling = মানে হলো elemet বা tag এর পরবর্তী  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
-// note 18 : PreviousSibling
-// PreviousSibling = মানে হলো elemet বা tag এর আগে  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
+note: 16: lastChild
+lastChild দিয়ে শেষ টাকে পাওয়া যাবে।
 
 
-// note 19: nextElementSibling
-// nextElementSibling = মানে হলো পরবর্তী elemet বা tag কে আছে তা দেখা বা পাওয়া।
+note 17 : NextSibling
+NextSibling = মানে হলো elemet বা tag এর পরবর্তী  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
+note 18 : PreviousSibling
+PreviousSibling = মানে হলো elemet বা tag এর আগে  কোন node আছে তা দেখা বা পাওয়া। এখানে মানে elemet, commets , space সবকিছু এক একটি নোড।
 
-// note 20: createElement
-// createElement মানে হলো  elemet বা tag তৈরি করা।
-// const creates = document.createElement(li); output: <li></li>
 
-// note 21: createAttribute
-// createAttribute মানে হলো elemet এর মধ্যে  Attribute তৈরি করা। যেমন: <video src=""></video>এই ট্যাগ এর মধ্যে Attribute হলো src=""
-// const aCreates = document.createAttribute("");
+note 19: nextElementSibling
+nextElementSibling = মানে হলো পরবর্তী elemet বা tag কে আছে তা দেখা বা পাওয়া।
 
-// note 22: appendchild
-// append অনেকটা push এর মতো।
-// কোনো Element create করার পর পুস করতে append ব্যবহার করা হয়।
-// html code
-{/* <section >
+note 20: createElement
+createElement মানে হলো  elemet বা tag তৈরি করা।
+const creates = document.createElement(li); output: <li></li>
+
+note 21: createAttribute
+createAttribute মানে হলো elemet এর মধ্যে  Attribute তৈরি করা। যেমন: <video src=""></video>এই ট্যাগ এর মধ্যে Attribute হলো src=""
+const aCreates = document.createAttribute("");
+
+note 22: appendchild
+append অনেকটা push এর মতো।
+কোনো Element create করার পর পুস করতে append ব্যবহার করা হয়।
+html code
+ <section >
         <ul class="li-append">
             <li>safi</li>
             <li>safi</li>
@@ -222,54 +223,54 @@ js code:
 const liCreate = document.createElement("li");
 liCreate.innerText = "new akta li add korlam r text o add korelam";
 const htmlclass = document.querySelector(".li-append");
-htmlclass.appendChild(liCreate) */}
+htmlclass.appendChild(liCreate);
 
 //subnote: 22
 // title: full section add use appendchild
 
-// const whereToAdd = document.getElementById("main-container"); //main ar secction add korbo
+const whereToAdd = document.getElementById("main-container"); //main ar secction add korbo
 
-// const createSection = document.createElement("section");
-// const h1add = document.createElement("h1");
-// h1add.innerText = "new section add in mainSection"
-// createSection.appendChild(h1add);
+const createSection = document.createElement("section");
+const h1add = document.createElement("h1");
+h1add.innerText = "new section add in mainSection"
+createSection.appendChild(h1add);
 
-// const ulCreate = document.createElement("ul");
-// createSection.appendChild(ulCreate);
+const ulCreate = document.createElement("ul");
+createSection.appendChild(ulCreate);
 
-// const liCreate1 = document.createElement("li");
-// liCreate1.innerText = "li one ";
-// ulCreate.appendChild(liCreate1);
+const liCreate1 = document.createElement("li");
+liCreate1.innerText = "li one ";
+ulCreate.appendChild(liCreate1);
 
-// const liCreate2 = document.createElement("li");
-// liCreate2.innerText = "li two ";
-// ulCreate.appendChild(liCreate2);
+const liCreate2 = document.createElement("li");
+liCreate2.innerText = "li two ";
+ulCreate.appendChild(liCreate2);
 
-// const liCreate3 = document.createElement("li");
-// liCreate3.innerText = "li three ";
-// ulCreate.appendChild(liCreate3);
+const liCreate3 = document.createElement("li");
+liCreate3.innerText = "li three ";
+ulCreate.appendChild(liCreate3);
 
 
-// whereToAdd.appendChild(createSection);
+whereToAdd.appendChild(createSection);
 
 // sub note 22:
-// //set innerHTML Directly:
+//set innerHTML Directly:
 
-// const whereToAddInner = document.getElementById("main-container");
+const whereToAddInner = document.getElementById("main-container");
 
-// const addSecction = document.createElement("section");
-//    //ক্যারেট চিহ্ন ব্যবহার করা লাগবে।
-// addSecction.innerHTML = `             
-// <h1>Header Create by innerHTML</h1>
-// <ul>
-//     <li >sojib100</li>
-//     <li >sojib200</li>
-//     <li >sojib300</li>
-//     <li >sojib400</li>
-//     <li >sojib500</li>
-// </ul>
-// `
-// whereToAddInner.appendChild(addSecction);
+const addSecction = document.createElement("section");
+   //ক্যারেট চিহ্ন ব্যবহার করা লাগবে।
+addSecction.innerHTML = `             
+<h1>Header Create by innerHTML</h1>
+<ul>
+    <li >sojib100</li>
+    <li >sojib200</li>
+    <li >sojib300</li>
+    <li >sojib400</li>
+    <li >sojib500</li>
+</ul>
+`
+whereToAddInner.appendChild(addSecction);
 
 
 
