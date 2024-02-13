@@ -73,4 +73,29 @@ makeGreen.addEventListener("click", function Green() {
 //...............................................
 
 // note: variableName.inneerText: p tag , h1 tag ইত্যাদি থেকে লেখা পাইতে হলে inneerText ব্যবহার করতে হবে।
-// variableName.value: input , textarea থেকে লেখা পাইতে হলে variableName.value ব্যবহার করতে হবে। 
+// variableName.value: input , textarea থেকে লেখা পাইতে হলে variableName.value ব্যবহার করতে হবে।
+
+
+// how to create comments box
+// html:
+{/* <div id="commnets-container"> </div>
+    <textarea name="" id="commnets-box" cols="50" rows="10" placeholder="Write your commnets"></textarea>
+    <button id="commnets-btn">commnets</button>
+
+//js:
+
+document.getElementById("commnets-btn").addEventListener("click", function () {
+    const commentsBox = document.getElementById("commnets-box");
+    const yourComments = commentsBox.value;
+
+    const commnetContainer = document.getElementById("commnets-container");
+    const containerAdd = document.createElement("p");
+    containerAdd.innerText = yourComments;
+
+    commnetContainer.appendChild(containerAdd);
+
+    commentsBox.value = "";
+}) */}
+
+
+//..................................................
