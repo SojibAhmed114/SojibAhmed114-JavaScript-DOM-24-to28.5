@@ -35,10 +35,11 @@ function rectangleCalculator() {
 
     // calculator 
     const rectangles = widths * height;  
-    
+
     // text add
     const rectangleArea = document.getElementById("rectangle-area");
     rectangleArea.innerText = rectangles;
+
 
 }
 
