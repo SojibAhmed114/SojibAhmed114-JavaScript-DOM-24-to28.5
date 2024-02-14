@@ -12,10 +12,33 @@ function triangleCalculator() {
     
     //  calculate
     const area = 0.5 * base * height;
-    console.log(area); 
 
     // show in card 
     const shows = document.getElementById("sapnArea");
     shows.innerText = area;
 
 }
+
+
+// rectangle calculator
+
+function rectangleCalculator() {
+    // whidth
+    const rectangleWidth = document.getElementById("rectangle-width");
+    const rectangleValue = rectangleWidth.value;
+    const widths = parseFloat(rectangleValue)
+
+    // height 
+    const rectangleHeight = document.getElementById("rectangle-height");
+    const rectangleValues = rectangleHeight.value;
+    const height = parseFloat(rectangleValues);
+
+    // calculator 
+    const rectangles = widths * height;  
+    
+    // text add
+    const rectangleArea = document.getElementById("rectangle-area");
+    rectangleArea.innerText = rectangles;
+
+}
+
