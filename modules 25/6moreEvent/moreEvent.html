@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Event </title>
+</head>
+<body>
+
+    <!-- <button id="mouse-Enter">mouseEnter</button>
+    <button id="mouse-move">mouseMove</button>
+    <input type="text" name="" id="key"> -->
+
+    <!-- github delete  -->
+    <h3 id="delete-text">delete this text</h3>
+    <input id="inputCheck" type="text" placeholder="please type Delete">
+    <button id="delete-btn" class="reds" disabled>Delete</button>
+
+    <script>
+        document.getElementById("inputCheck").addEventListener("keyup",function(event){
+            const text = event.target.value;
+           const btn = document.getElementById("delete-btn");
+            if(text === "Delete"){
+                btn.removeAttribute("disabled");
+            }
+            else{
+                btn.setAttribute("disabled", true)
+            }
+        })
+
+        document.getElementById("delete-btn").addEventListener("click",function(event){
+            const deleteText = document.getElementById("delete-text");
+            deleteText.remove();
+        })
+
+
+    // mouseEnter
+        // document.getElementById("mouse-Enter").addEventListener("mouseenter",function mouseEnters (){
+        //     console.log("mouseEnter"); 
+        // })
+        // // mousermove
+        // document.getElementById("mouse-move").addEventListener("mousemove",function (){
+        //     console.log("mouse move"); 
+        // })
+
+        // keydown : ata temon lage karon, input: sojib output:soji
+        // document.getElementById("key").addEventListener("keydown",function(event){
+        //     console.log(event.target.value); 
+        // })
+        //keypress: ata temon lage karon, input: sojib output:soji
+        // document.getElementById("key").addEventListener("keypress",function(event){
+        //     console.log(event.target.value); 
+        // })
+
+        // document.getElementById("key").addEventListener("keyup", function(event){
+        //     console.log(event.target.value); 
+        // })
+ 
+    </script>  
+</body>
+</html>

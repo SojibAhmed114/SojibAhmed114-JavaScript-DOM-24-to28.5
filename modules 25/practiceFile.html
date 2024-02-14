@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice file</title>
+</head>
+<body>
+    <h3 id="text-info">delete this text</h3>
+    <input id="info" type="text" placeholder="please type Delete">
+    <button id="btn-delete"  disabled>Delete</button>
+
+    <script>
+
+        document.getElementById("info").addEventListener("keyup", function(event){
+            const checkText = event.target.value;
+            const typing = document.getElementById("btn-delete");
+            if (checkText === "delete"){
+                typing.removeAttribute("disabled");
+            }
+            else{
+                typing.setAttribute("disabled", true);
+            }
+            info.value = "";
+        })
+
+        document.getElementById("btn-delete").addEventListener("click", function(){
+            const removeText = document.getElementById("text-info");
+            removeText.remove()
+
+        })
+    </script>
+</body>
+</html>

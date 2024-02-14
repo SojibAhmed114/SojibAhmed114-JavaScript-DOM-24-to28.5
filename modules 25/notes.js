@@ -99,3 +99,57 @@ document.getElementById("commnets-btn").addEventListener("click", function () {
 
 
 //..................................................
+// note: important more event keyup, keydown, keypress.
+
+//note:
+// keydown: ata temon lage karon, input: sojib output: soji
+//     < input type = "text" name = "" id = "key" >
+//     document.getElementById("key").addEventListener("keydown",function(event){
+//             console.log(event.target.value);
+//         })
+
+//note: 
+// keypress: ata temon lage karon, input: sojib output: soji
+{/* <input type="text" name="" id="key"></input>
+document.getElementById("key").addEventListener("keypress",function(event){
+    console.log(event.target.value); 
+}) */}
+
+// note:
+// keyup: ata onek important
+// <input type="text" name="" id="key"></input>
+// document.getElementById("key").addEventListener("keyup", function(event){
+//     console.log(event.target.value);
+// })
+
+// note: very import
+// 25-6 Simple Github Like Delete Confirmation Button
+// html:
+// <!-- github delete  -->
+//     <h3 id="delete-text">delete this text</h3>
+//     <input id="inputCheck" type="text" placeholder="please type Delete">
+//     <button id="delete-btn" class="reds" disabled>Delete</button>
+
+// js:
+// document.getElementById("inputCheck").addEventListener("keyup",function(event){
+//             const text = event.target.value;
+//            const btn = document.getElementById("delete-btn");
+
+//             if(text === "Delete"){
+//                 btn.removeAttribute("disabled");
+//             }
+//             else{
+//                 btn.setAttribute("disabled", true)
+//             }
+//         })
+
+//         document.getElementById("delete-btn").addEventListener("click",function(event){
+//             const deleteText = document.getElementById("delete-text");
+//             deleteText.remove();
+//         })
+
+//note:video 25.7 stopPropagation();
+কোনো ডকুমেন্টস এর বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopPropagation মেথড ব্যবহার করে।
+
+// note: stopImmediatePropagation();
+কোনো ডকুমেন্টস এ একই ইভেন্ট লিসেনার একাধিক থাকলে তার মধ্যে থেকে একটি বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopImmediatePropagation(); মেথড ব্যবহার করে।

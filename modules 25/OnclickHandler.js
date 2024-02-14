@@ -10,7 +10,6 @@ function makess() {
 }
 
 // system four
-// const makeDark = document.getElementsByClassName("make-dark"); //class diye kaj kre na keno?
 const ki = document.getElementById("kihoilo");
 ki.onclick = function darks() {
     document.body.style.backgroundColor = "gray";

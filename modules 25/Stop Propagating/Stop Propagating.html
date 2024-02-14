@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Propagating</title>
+    <style>
+        #item1{
+            border: 1px solid red;
+        }
+        #body {
+            border: 1px solid saddlebrown;
+        }
+        ul{
+            border: 1px solid green;
+        }
+        section{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Stop Propagating</h1>
+    <section id="list-section">
+        <ul id="ul-li">
+            <li id="item1">item1</li>
+            <li id="item2">item2</li>
+            <li id="item3">item3</li>
+            <li id="item4">item4</li>
+            <li id="item5">item5</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById("item1").addEventListener("click", function(event1){
+            console.log("item1 clicked"); 
+            // event1.stopPropagation();
+            event1.stopImmediatePropagation();
+
+        })
+        document.getElementById("item1").addEventListener("click", function(event1){
+            console.log("item1 clicked"); 
+            // event1.stopPropagation();
+
+        })
+        document.getElementById("item1").addEventListener("click", function(event1){
+            console.log("item1 clicked"); 
+            // event1.stopPropagation();
+
+        })
+
+
+        document.getElementById("ul-li").addEventListener("click", function(event2){
+            console.log("ul clicked"); 
+        })
+        document.getElementById("list-section").addEventListener("click", function(event3){
+            console.log("section clicked"); 
+        })
+        document.getElementById("body").addEventListener("click", function(event4){
+            console.log("body clicked"); 
+        })
+
+    </script>
+</body>
+</html>
