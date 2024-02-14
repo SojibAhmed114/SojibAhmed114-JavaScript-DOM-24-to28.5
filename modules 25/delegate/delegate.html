@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate</title>
+</head>
+<body>
+    <h1>Delegate</h1>
+    <section>
+        <ul id="li-container">
+            <li class="li-item">item1</li>
+            <li class="li-item">item2</li>
+            <li class="li-item">item3</li>
+            <li class="li-item">item4</li>
+            <li class="li-item">item5</li>
+        </ul>
+    </section>
+    <button id="add-btn">add item</button>
+
+    <script>
+        // const liItem  = document.getElementsByClassName("li-item");
+        // for (const item of liItem){
+        //     item.addEventListener("click", function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+        document.getElementById("li-container").addEventListener("click", function(){
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        document.getElementById("add-btn").addEventListener("click",function(){
+            const liContainer = document.getElementById("li-container");
+
+            const set = document.createElement("li");
+            set.innerText = "item added done";
+            set.classList.add("li-item")
+            liContainer.appendChild(set)
+        })
+    </script>
+</body>
+</html>

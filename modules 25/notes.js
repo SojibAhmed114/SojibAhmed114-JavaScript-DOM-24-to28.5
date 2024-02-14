@@ -149,7 +149,7 @@ document.getElementById("key").addEventListener("keypress",function(event){
 //         })
 
 //note:video 25.7 stopPropagation();
-কোনো ডকুমেন্টস এর বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopPropagation মেথড ব্যবহার করে।
+// কোনো ডকুমেন্টস এর বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopPropagation মেথড ব্যবহার করে।
 
 // note: stopImmediatePropagation();
-কোনো ডকুমেন্টস এ একই ইভেন্ট লিসেনার একাধিক থাকলে তার মধ্যে থেকে একটি বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopImmediatePropagation(); মেথড ব্যবহার করে।
+// কোনো ডকুমেন্টস এ একই ইভেন্ট লিসেনার একাধিক থাকলে তার মধ্যে থেকে একটি বাবলিং টাকে রোধ / বন্ধ করতে চাইলে, জাস্ট stopImmediatePropagation(); মেথড ব্যবহার করে।
