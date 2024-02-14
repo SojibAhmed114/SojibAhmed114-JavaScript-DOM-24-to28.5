@@ -10,7 +10,100 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <h1>shfds</h1>
+<body class="p-8">
+    <main>
+        <div class="flex gap-4 flex-col md:flex-row">
+            <!-- shape area  -->
+            <div class="flex-1 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Triangle -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" font-bold text-2xl text-center">Triangle!</h2>
+                      <p class="text-center text-xl"> Area: <span id="sapnArea"></span> cm <sup>2</sup> </p>
+
+                       <div>
+                        <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="b">
+                        <span class="ml-2 mr-3">cm</span>
+                        <input id="triangle-height" class="w-16  text-2xl p-2 rounded-sm bg-slate-200"  type="text" name="" placeholder="h">
+                        <span class="ml-2">h</span>
+                       </div>
+
+                      <div class="card-actions">
+                        <button onclick="triangleCalculator()" class="btn btn-primary w-full">Triangle </button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Triangle -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" font-bold text-2xl text-center">Triangle!</h2>
+                      <p class="text-center">0.5 x b x h</p>
+
+                       <div>
+                        <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="b">
+                        <span class="ml-2 mr-3">cm</span>
+                        <input id="triangle-height" class="w-16  text-2xl p-2 rounded-sm bg-slate-200"  type="text" name="" placeholder="h">
+                        <span class="ml-2">h</span>
+                       </div>
+
+                      <div class="card-actions">
+                        <button onclick="triangleCalculator()" class="btn btn-primary w-full">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Triangle -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" font-bold text-2xl text-center">Triangle!</h2>
+                      <p class="text-center">0.5 x b x h</p>
+
+                       <div>
+                        <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="b">
+                        <span class="ml-2 mr-3">cm</span>
+                        <input id="triangle-height" class="w-16  text-2xl p-2 rounded-sm bg-slate-200"  type="text" name="" placeholder="h">
+                        <span class="ml-2">h</span>
+                       </div>
+
+                      <div class="card-actions">
+                        <button onclick="triangleCalculator()" class="btn btn-primary w-full">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Triangle -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" font-bold text-2xl text-center">Triangle!</h2>
+                      <p class="text-center">0.5 x b x h</p>
+
+                       <div>
+                        <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="b">
+                        <span class="ml-2 mr-3">cm</span>
+                        <input id="triangle-height" class="w-16  text-2xl p-2 rounded-sm bg-slate-200"  type="text" name="" placeholder="h">
+                        <span class="ml-2">h</span>
+                       </div>
+
+                      <div class="card-actions">
+                        <button onclick="triangleCalculator()" class="btn btn-primary w-full">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+               
+    
+            </div>
+
+            <!-- right side area  -->
+            <div class="w-96 border-2 border-gray-600 rounded-md">
+                <h2 class="text-2xl text-center">Area calculation</h2>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./js/Triangle.js"></script>
 </body>
 </html>
