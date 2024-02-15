@@ -20,7 +20,7 @@
                     <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class=" font-bold text-2xl text-center">Triangle!</h2>
-                      <p class="text-center text-xl"> Area: <span id="sapnArea"></span> cm <sup>2</sup> </p>
+                      <p class="text-center text-xl"> Area: <span id="sapnArea">0</span> cm <sup>2</sup> </p>
 
                        <div>
                         <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="b">
@@ -50,6 +50,26 @@
 
                       <div class="card-actions">
                         <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculator </button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- paralelogram -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-3/4 mt-8" src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" font-bold text-2xl text-center">paralelogram!</h2>
+                      <p class="text-center text-xl"> Area: <span id="paralelogram">0</span> cm <sup>2</sup> </p>
+
+                       <div>
+                        <input id="paralelogram-base" class="w-16 text-2xl p-2 rounded-sm bg-slate-200" type="text" name="" placeholder="w">
+                        <span class="ml-2 mr-3">cm</span>
+                        <input id="paralelogram-height" class="w-16  text-2xl p-2 rounded-sm bg-slate-200"  type="text" name="" placeholder="l">
+                        <span class="ml-2">cm</span>
+                       </div>
+
+                      <div class="card-actions">
+                        <button onclick="paralelogramBase()" class="btn btn-primary w-full">Calculator </button>
                       </div>
                     </div>
                   </div>

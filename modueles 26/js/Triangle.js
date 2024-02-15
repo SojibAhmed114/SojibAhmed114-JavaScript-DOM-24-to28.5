@@ -39,7 +39,32 @@ function rectangleCalculator() {
     // text add
     const rectangleArea = document.getElementById("rectangle-area");
     rectangleArea.innerText = rectangles;
+}
 
+
+// paralelogram calculator 
+function paralelogramBase() {
+    const base = commonFunction("paralelogram-base");
+    const height = commonFunction("paralelogram-height");
+    const areas = base * height
+
+    setGetElementId("paralelogram", areas)
+    
+}
+
+// common function for calculator
+function commonFunction(common) {
+    const textFind = document.getElementById(common);
+    const values = textFind.value;
+    const converts = parseFloat(values);
+    return converts;
 
 }
 
+
+function setGetElementId(element1, areas) {
+    const set = document.getElementById(element1);
+    set.innerText = areas;
+}
+
+// common function for calculator end
