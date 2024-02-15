@@ -1,1 +1,1 @@
-htmm
+// 26 ar kono notes nei 
