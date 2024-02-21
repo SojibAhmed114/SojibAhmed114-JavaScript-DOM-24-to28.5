@@ -8,7 +8,18 @@
 //     playGroundShow.classList.remove("hidden")
 // }
 
+// ....................................................
+
 function playBtn() {
     hiddenPageInId("home-page");
     showPageInId("play-ground");
+    playGrounds();
 }
+
+function playGrounds() {
+    const key = alphabateGame();
+
+    const currentAlphabateElemets = document.getElementById("current-alphabate");
+    currentAlphabateElemets.innerText = key;
+}
+
